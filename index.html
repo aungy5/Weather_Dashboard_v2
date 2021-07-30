@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Weather Dashboard</title>
+</head>
+
+<header>
+<div class="p-5 text-center">
+    <h1 class="mb-3">Weather Dashboard</h1>
+    <h4 class="mb-1">Select a city below to view the weather!</h4>
+</div>
+</header>
+
+<div class="container-fluid body">
+    <div class="row content searcharea">
+      <div class="col-sm-3 sidenav">
+        <h4>Search for a city below!</h4>
+        <div class="input-group">
+            <input id="searchInput" type="text" placeholder="Enter your city..">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" id="searchBtn" type="button">
+                Search
+              </button>
+            </span>
+          </div>
+          <ul id="prevSearch">My Previous Searches</ul>
+    </div>
+    <div class="col-sm-9 text-center currentforecast">
+        <h4>Current Forecast</h4>
+        <!-- add the current forecast card here -->
+        <div class="card" id="currentCard">
+        </div>
+
+        <div class="col-sm-9 text-center fivedayforecast">
+          <h4>5 Day Forecast</h4>
+          <!-- add the current forecast card here -->
+          <div class="card" id="fiveDayCard">
+          </div>
+</div> 
+
+
+        
+
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

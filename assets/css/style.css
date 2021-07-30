@@ -1,0 +1,26 @@
+header {
+    background-color: pink;
+}
+
+#prevSearch {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.currentforecast {
+    background-color: lightskyblue;
+    align-items: center;
+    padding: 35px;
+}
+
+#fiveDayCard {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.fivedayforecast {
+    align-items: center;
+}
+
