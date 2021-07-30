@@ -41,20 +41,10 @@ function getApi(event) {
         console.log(response.wind.speed)
         console.log(response.dt * 1000)
 
-        //var prevSearchList = $("#prevSearch")
-        //var cityName = document.createElement('li')
-        //cityName.textContent = `${response.name}`
-        //prevSearchList.append(cityName)
-
-        //for (var i = 0; i < localStorage.length; i++) {
           var prevSearchList = $("#prevSearch")
           var cityName = document.createElement('button')
           cityName.textContent = response.name
           prevSearchList.append(cityName)
-          //console.log(localStorage)
-          //var local = localStorage.setItem(keyCount, response.name)
-          //keyCount = keyCount + 1;
-        //}
 
         var local = localStorage.setItem(keyCount, response.name)
         keyCount = keyCount + 1;
